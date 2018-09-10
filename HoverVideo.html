@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+(function($){
+	$(function(){
+		$('.videoClass').hover(function(){
+			var video = $(this).get(0);			
+			video.play();
+		}, function(){
+			var video = $(this).get(0);
+			video.pause();
+			video.currentTime = '0';			
+		});
+	});
+})(jQuery);
+</script>
+
+<div id="chunk-previous-user-story" class="container chunk-products">
+	<div class="container max-width-d">
+		<video class="videoClass" style="width:20%;height:25%;" muted playsinline><source src="YourFileLocation.mp4" type="video/mp4"></video>
+	</div>
+</div>
